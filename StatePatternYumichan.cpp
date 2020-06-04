@@ -22,6 +22,12 @@ void StatePatternYumichan::is_over_her_cold() {
     this->change_state(new OrdinaryState);
 }
 
+int StatePatternYumichan::GetDiceRes() {
+    this->state->SetDice();
+    return this->state->GetDice();
+
+}
+
 void StatePatternYumichan::change_state(State* state) {
     std::cout << "¡‚Ìó‘Ô‚Í" << this->state->GetStateName() << "‚¾‚æB" << std::endl;
     delete this->state;

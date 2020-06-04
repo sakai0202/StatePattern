@@ -1,10 +1,16 @@
 #pragma once
 #include <string>
 
+#include <time.h>
+#include <stdio.h>
+
+
 /*!
 * @brief 由実ちゃんの状態を表す基底クラス
 */
 class State {
+private:
+    int dice;
 protected:
     std::string statename;
 public:
@@ -26,6 +32,19 @@ public:
     std::string GetStateName() {
         return statename;
     }
+
+    virtual void SetDice() {
+        srand((unsigned int)time(NULL));
+        dice = rand() % 6 + 1;
+    }
+
+    int GetDice() {
+        return dice;
+    }
+
+
+
+
 
 };
 

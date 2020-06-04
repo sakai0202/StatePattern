@@ -42,5 +42,32 @@ int main() {
 
     action(yumichan);
 
+    std::string temp;
 
+    
+    while (1) {
+        std::cout << "0で終了　１でダイス" << std::endl;
+        
+
+        std::cin >> temp;
+        if (temp == "0") break;
+        int res;
+        res = yumichan.GetDiceRes();
+
+        std::cout << "ダイス！ :" << res << std::endl;
+
+        if (res > 4)
+            yumichan.change_state(new ExcellentState);
+        else if(res < 2)
+            yumichan.change_state(new BadMoodState);
+        else {
+            yumichan.change_state(new OrdinaryState);
+        }
+
+        comment(yumichan);
+    }
+
+    std::cout << "さようなら。" << std::endl;
 }
+
+
