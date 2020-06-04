@@ -1,11 +1,13 @@
 #pragma once
 
 #include "OrdinaryState.h"
-#include "BadModeState.h"
+#include "BadMoodState.h"
+#include "ExcellentState.h"
 
 class StatePatternYumichan {
 private:
     State* state;
+public:
     void change_state(State* state);
 public:
     StatePatternYumichan();

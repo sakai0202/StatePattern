@@ -23,4 +23,9 @@ int main() {
 
     // �ʏ펞
     comment(yumichan);
+
+    yumichan.change_state(new ExcellentState);
+
+    comment(yumichan);
+
 }
