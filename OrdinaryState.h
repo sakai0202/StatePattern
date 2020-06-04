@@ -3,6 +3,7 @@
 
 class OrdinaryState : public State {
 public:
+    OrdinaryState() : State("OrdibaryState") {};
     /*!
     * @brief 朝の挨拶を返す。通常は、男らしく応えます。
     */

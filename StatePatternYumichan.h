@@ -15,6 +15,7 @@ public:
 public:
     std::string morning_greet();
     std::string get_protection_for_cold();
+    std::string showIsHappy();
 
     void unimportant_talk();
     void has_a_cold();

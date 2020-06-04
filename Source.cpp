@@ -9,6 +9,12 @@ void comment(StatePatternYumichan &yumichan) {
     std::cout << yumichan.get_protection_for_cold() << std::endl;
 }
 
+//âD’²‚Ì‚Ýˆá‚¤“®ì
+void action(StatePatternYumichan& yumichan) {
+    std::cout << "Question : ‚ ‚È‚½‚ÍK‚¹H" << std::endl;
+    std::cout << yumichan.showIsHappy() << std::endl;
+}
+
 int main() {
     StatePatternYumichan yumichan;
     // ’ÊíŽž
@@ -28,7 +34,13 @@ int main() {
 
     comment(yumichan);
 
-    yumichan.unimportant_talk();
+    action(yumichan);
+
+    yumichan.change_state(new OrdinaryState);
+
+    comment(yumichan);
+
+    action(yumichan);
 
 
 }

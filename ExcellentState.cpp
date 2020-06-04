@@ -8,3 +8,9 @@ std::string ExcellentState::get_protection_for_cold() {
     return "‰H–Ñ•z’c";
 }
 
+std::string ExcellentState::happy() {
+    return "‚Æ‚Á‚Ä‚àK‚¹I";
+}
+
+ExcellentState::ExcellentState() : State("ExcellentState"){
+}

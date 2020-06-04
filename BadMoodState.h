@@ -3,6 +3,7 @@
 
 class BadMoodState : public State {
 public:
+    BadMoodState() : State("BadMoodState") {};
     /*!
     * @brief 朝の挨拶を返す。気分が悪いので、ぶっきらぼうに応えます。
     */

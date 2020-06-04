@@ -10,10 +10,9 @@ std::string StatePatternYumichan::get_protection_for_cold() {
     return this->state->get_protection_for_cold();
 }
 
-void StatePatternYumichan::unimportant_talk() {
-    std::cout << "sakai" << std::endl;
+std::string StatePatternYumichan::showIsHappy() {
+    return this->state->happy();
 }
-
 
 void StatePatternYumichan::has_a_cold() {
     this->change_state(new BadMoodState);
@@ -24,6 +23,8 @@ void StatePatternYumichan::is_over_her_cold() {
 }
 
 void StatePatternYumichan::change_state(State* state) {
+    std::cout << "¡‚Ìó‘Ô‚Í" << this->state->GetStateName() << "‚¾‚æB" << std::endl;
     delete this->state;
     this->state = state;
+    std::cout << "V‚µ‚¢ó‘Ô‚Í" << this->state->GetStateName() << "‚¾‚æB" << std::endl;    
 }
