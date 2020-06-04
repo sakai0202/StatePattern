@@ -3,6 +3,7 @@
 #include "OrdinaryState.h"
 #include "BadMoodState.h"
 #include "ExcellentState.h"
+#include <iostream>
 
 class StatePatternYumichan {
 private:
@@ -15,6 +16,7 @@ public:
     std::string morning_greet();
     std::string get_protection_for_cold();
 
+    void unimportant_talk();
     void has_a_cold();
     void is_over_her_cold();
 };

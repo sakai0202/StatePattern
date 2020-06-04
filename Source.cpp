@@ -28,4 +28,7 @@ int main() {
 
     comment(yumichan);
 
+    yumichan.unimportant_talk();
+
+
 }

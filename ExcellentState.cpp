@@ -7,3 +7,4 @@ std::string ExcellentState::morning_greet() {
 std::string ExcellentState::get_protection_for_cold() {
     return "‰H–Ñ•z’c";
 }
+

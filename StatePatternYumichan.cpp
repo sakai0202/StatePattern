@@ -10,6 +10,11 @@ std::string StatePatternYumichan::get_protection_for_cold() {
     return this->state->get_protection_for_cold();
 }
 
+void StatePatternYumichan::unimportant_talk() {
+    std::cout << "sakai" << std::endl;
+}
+
+
 void StatePatternYumichan::has_a_cold() {
     this->change_state(new BadMoodState);
 }
